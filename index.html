@@ -147,7 +147,6 @@
         },7100)
         setTimeout(function(){
             $("#yazi").toggle();
-            //$(".navbar").removeClass("visually-hidden");
             $(".nav-link").removeClass("visually-hidden");
             $("body").css("background-color","#FBFAF5");
        },7200)
@@ -201,7 +200,16 @@
             document.getElementById("projelerim").innerHTML="[projelerim]"
             document.getElementById("blog").innerHTML="[blog]"
         },9550)
-        
+        $("#benkimim").hover(function () {
+                // over
+                document.getElementById("benkimim").innerHTML="burası facebook'un gizlilik sözleşmesi gibi işlevsiz"
+                $("#benkimim").css("cursor","default");
+            }, function () {
+                // out
+                document.getElementById("benkimim").innerHTML="[ben-kimim?]"
+
+            }
+        );
 
     </script>
 </body>
