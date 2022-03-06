@@ -26,8 +26,12 @@
                     <a href="#" id="projelerim" class="nav-link visually-hidden">[]</a>
                 </li>
                 <li class="nav-item">
+                    <a href="mailto:alperentuna26@gmail.com" id="iletisim" class="nav-link visually-hidden">[]</a>
+                </li>
+                <li class="nav-item">
                     <a href="https://medium.com/@alperentuna26" id="blog" class="nav-link visually-hidden">[]</a>
                 </li>
+
             </ul>
         </div>  
     </section>
@@ -153,41 +157,49 @@
             document.getElementById("benkimim").innerHTML="[b]"
             document.getElementById("projelerim").innerHTML="[p]"
             document.getElementById("blog").innerHTML="[]"
+            document.getElementById("iletisim").innerHTML="[i]"
         },7500)
         setTimeout(function(){
             document.getElementById("benkimim").innerHTML="[be]"
             document.getElementById("projelerim").innerHTML="[pr]"
             document.getElementById("blog").innerHTML="[]"
+            document.getElementById("iletisim").innerHTML="[i]"
         },7900)
         setTimeout(function(){
             document.getElementById("benkimim").innerHTML="[ben]"
             document.getElementById("projelerim").innerHTML="[pro]"
             document.getElementById("blog").innerHTML="[b]"
+            document.getElementById("iletisim").innerHTML="[il]"
         },8300)
         setTimeout(function(){
             document.getElementById("benkimim").innerHTML="[ben-]"
             document.getElementById("projelerim").innerHTML="[proj]"
             document.getElementById("blog").innerHTML="[b]"
+            document.getElementById("iletisim").innerHTML="[ile]"
         },8600)
         setTimeout(function(){
             document.getElementById("benkimim").innerHTML="[ben-k]"
             document.getElementById("projelerim").innerHTML="[proje]"
             document.getElementById("blog").innerHTML="[b]"
+            document.getElementById("iletisim").innerHTML="[ilet]"
         },8900)
         setTimeout(function(){
             document.getElementById("benkimim").innerHTML="[ben-ki]"
             document.getElementById("projelerim").innerHTML="[projel]"
             document.getElementById("blog").innerHTML="[bl]"
+            document.getElementById("iletisim").innerHTML="[ileti]"
         },9100)
         setTimeout(function(){
             document.getElementById("benkimim").innerHTML="[ben-kim]"
             document.getElementById("projelerim").innerHTML="[projele]"
             document.getElementById("blog").innerHTML="[bl]"
+            document.getElementById("iletisim").innerHTML="[iletis]"
         },9200)
         setTimeout(function(){
             document.getElementById("benkimim").innerHTML="[ben-kimi]"
             document.getElementById("projelerim").innerHTML="[projeler]"
             document.getElementById("blog").innerHTML="[blo]"
+            document.getElementById("iletisim").innerHTML="[iletisi]"
         },9400)
         setTimeout(function(){
             document.getElementById("benkimim").innerHTML="[ben-kimim]"
@@ -198,6 +210,7 @@
             document.getElementById("benkimim").innerHTML="[ben-kimim?]"
             document.getElementById("projelerim").innerHTML="[projelerim]"
             document.getElementById("blog").innerHTML="[blog]"
+            document.getElementById("iletisim").innerHTML="[iletisim]"
         },9550)
         $("#benkimim").hover(function () {
                 // over
@@ -211,14 +224,24 @@
         );
         $("#projelerim").click(function (e) { 
             e.preventDefault();
-            var a=prompt("Lütfen görmek istediğiniz projeyi yazınız. bknz( sanalMüze.html , www.herbaldogalyasam.com )");
-            if (a=="www.herbaldogalyasam.com"){
+            var BakilanProje=prompt("Lütfen görmek istediğiniz projeyi yazınız. bknz( sanalMüze.html , www.herbaldogalyasam.com )");
+            if (BakilanProje=="www.herbaldogalyasam.com"){
                 window.open("https://www.herbaldogalyasam.com","_blank");
-            }
-            else{
+            } else if(BakilanProje=="sanalMüze.html"){
+                window.open("https://dunyayidegistireninsanlar.netlify.app","_blank")
+                alert("Girmiş olduğunuz site benim ilk yapmış olduğum ve henüz bitirmediğim projemdir. Bu sebepten dolayı sitenin tam verimle kullanılması için masaüstünde tam ekran kullanılması gerekmektedir.")
+            } else{
                 alert("Maalesef o projeyi henüz yapmadım, bir gün belki...");
             }
         });
+        $("#iletisim").hover(function () {
+                // over
+                document.getElementById("iletisim").innerHTML="[iletisim.mail]"
+            }, function () {
+                // out
+                document.getElementById("iletisim").innerHTML="[iletisim]"
+            }
+        );
 
     </script>
 </body>
