@@ -23,7 +23,7 @@
                     <a href="#benkimim" id="benkimim" class="nav-link visually-hidden">[]</a>
                 </li>
                 <li class="nav-item">
-                    <a href="https://atuna26.github.io/atuna00/sablon.html" id="projelerim" class="nav-link visually-hidden">[]</a>
+                    <a href="#" id="projelerim" class="nav-link visually-hidden">[]</a>
                 </li>
                 <li class="nav-item">
                     <a href="https://medium.com/@alperentuna26" id="blog" class="nav-link visually-hidden">[]</a>
@@ -31,7 +31,6 @@
             </ul>
         </div>  
     </section>
-
     <script>
         setTimeout(function () {
             document.getElementById("yazi").innerHTML="[y]"
@@ -210,6 +209,16 @@
 
             }
         );
+        $("#projelerim").click(function (e) { 
+            e.preventDefault();
+            var a=prompt("Lütfen görmek istediğiniz projeyi yazınız. bknz( sanalMüze.html , www.herbaldogalyasam.com )");
+            if (a=="www.herbaldogalyasam.com"){
+                window.open("https://www.herbaldogalyasam.com","_blank");
+            }
+            else{
+                alert("Maalesef o projeyi henüz yapmadım, bir gün belki...");
+            }
+        });
 
     </script>
 </body>
