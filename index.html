@@ -224,13 +224,16 @@
         );
         $("#projelerim").click(function (e) { 
             e.preventDefault();
-            var BakilanProje=prompt("Lütfen görmek istediğiniz projeyi yazınız. bknz( sanalMüze.html , www.herbaldogalyasam.com )");
+            var BakilanProje=prompt("Lütfen görmek istediğiniz projeyi yazınız. bknz( sanalMüze.html , www.herbaldogalyasam.com , sqldefter.html )");
             if (BakilanProje=="www.herbaldogalyasam.com"){
                 window.open("https://www.herbaldogalyasam.com","_blank");
             } else if(BakilanProje=="sanalMüze.html"){
-                window.open("https://dunyayidegistireninsanlar.netlify.app","_blank")
-                alert("Girmiş olduğunuz site benim ilk yapmış olduğum ve henüz bitirmediğim projemdir. Bu sebepten dolayı sitenin tam verimle kullanılması için masaüstünde tam ekran kullanılması gerekmektedir.")
-            } else{
+                window.open("https://dunyayidegistireninsanlar.netlify.app","_blank");
+                alert("Girmiş olduğunuz site benim ilk yapmış olduğum ve henüz bitirmediğim projemdir. Bu sebepten dolayı sitenin tam verimle kullanılması için masaüstünde tam ekran kullanılması gerekmektedir.");
+            } else if(BakilanProje=="sqldefter.html"){
+                window.open("https://sqldefter.netlify.app","_blank");
+            }
+             else{
                 alert("Maalesef o projeyi henüz yapmadım, bir gün belki...");
             }
         });
