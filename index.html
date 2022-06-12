@@ -221,18 +221,7 @@
 
             }
         );
-        $("#projelerim").click(function (e) { 
-            e.preventDefault();
-            var BakilanProje=prompt("Lütfen görmek istediğiniz projeyi yazınız. bknz(, www.herbaldogalyasam.com , sqldefter.html )");
-            if (BakilanProje=="www.herbaldogalyasam.com"){
-                window.open("https://www.herbaldogalyasam.com","_blank");
-            }else if(BakilanProje=="sqldefter.html"){
-                window.open("https://sqldefter.netlify.app","_blank");
-            }
-             else{
-                alert("Maalesef o projeyi henüz yapmadım, bir gün belki...");
-            }
-        });
+
         $("#iletisim").hover(function () {
                 // over
                 document.getElementById("iletisim").innerHTML="[iletisim.mail]"
